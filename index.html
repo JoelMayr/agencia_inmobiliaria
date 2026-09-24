@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inmobiliaria</title>
+  <!-- Tipografías: Fraunces (títulos, con carácter) + Inter (texto, legible) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ==================== HEADER / NAVEGACIÓN ==================== -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__marca">
+        <!-- El Controller completa estos textos desde Model.js -->
+        <span class="header__logo" data-marca="nombre">Marca</span>
+        <span class="header__eslogan" data-marca="eslogan"></span>
+      </div>
+
+      <button class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="header__nav">
+        <a href="#historia">Quiénes somos</a>
+        <a href="#oficina">Oficina</a>
+        <a href="#ubicacion">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" data-section="hero">
+      <div class="hero__contenido">
+        <h1 data-hero="titulo"></h1>
+        <p data-hero="subtitulo"></p>
+        <button class="boton boton--primario" data-hero="boton"></button>
+      </div>
+    </section>
+
+    <!-- ==================== QUIÉNES SOMOS / HISTORIA ==================== -->
+    <section class="historia" id="historia" data-section="historia">
+      <div class="contenedor historia__grid">
+        <div class="historia__texto">
+          <h2 data-historia="titulo"></h2>
+          <!-- El Controller inserta un <p> por cada párrafo del Modelo -->
+          <div data-historia="parrafos"></div>
+        </div>
+
+        <!-- El Controller inserta un bloque .stat por cada estadística del Modelo -->
+        <div class="historia__stats" data-historia="estadisticas"></div>
+      </div>
+    </section>
+
+    <!-- ==================== NUESTRA OFICINA ==================== -->
+    <section class="oficina" id="oficina" data-section="oficina">
+      <div class="contenedor">
+        <h2 data-oficina="titulo"></h2>
+        <p class="oficina__descripcion" data-oficina="descripcion"></p>
+        <!-- El Controller inserta una <figure> por cada foto del Modelo -->
+        <div class="oficina__galeria" data-oficina="galeria"></div>
+      </div>
+    </section>
+
+    <!-- ==================== UBICACIÓN Y CONTACTO ==================== -->
+    <section class="ubicacion" id="ubicacion" data-section="ubicacion">
+      <div class="contenedor ubicacion__grid">
+        <div class="ubicacion__info">
+          <h2 data-ubicacion="titulo"></h2>
+
+          <p class="ubicacion__dato">
+            <strong>Dirección</strong>
+            <span data-ubicacion="direccion"></span>
+          </p>
+          <p class="ubicacion__dato">
+            <strong>Horario</strong>
+            <span data-ubicacion="horario"></span>
+          </p>
+          <p class="ubicacion__dato">
+            <strong>Teléfono</strong>
+            <a data-ubicacion="telefono" href="#"></a>
+          </p>
+          <p class="ubicacion__dato">
+            <strong>Email</strong>
+            <a data-ubicacion="email" href="#"></a>
+          </p>
+
+          <!-- Redes sociales: cada link se completa según su data-red -->
+          <div class="redes-sociales">
+            <a class="red-social" data-red="instagram" href="#" target="_blank" rel="noopener">
+              <span class="red-social__icono" aria-hidden="true">◎</span>
+              <span class="red-social__texto"></span>
+            </a>
+            <a class="red-social" data-red="facebook" href="#" target="_blank" rel="noopener">
+              <span class="red-social__icono" aria-hidden="true">◫</span>
+              <span class="red-social__texto"></span>
+            </a>
+            <a class="red-social" data-red="whatsapp" href="#" target="_blank" rel="noopener">
+              <span class="red-social__icono" aria-hidden="true">☏</span>
+              <span class="red-social__texto"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="ubicacion__mapa">
+          <!-- El Controller completa el "src" con la URL del Modelo -->
+          <iframe
+            data-ubicacion="mapa"
+            title="Ubicación en el mapa"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="contenedor footer__inner">
+      <p><span data-footer="nombre"></span> · <span data-footer="derechos"></span></p>
+      <p data-footer="anio-wrap">© <span data-footer="anio"></span></p>
+    </div>
+  </footer>
+
+  <!-- Orden importante: primero el Modelo, después el Controlador -->
+  <script src="js/Model.js"></script>
+  <script src="js/Controller.js"></script>
+</body>
+</html>
