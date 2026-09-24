@@ -25,7 +25,7 @@ const agencia = {
   // 1. MARCA / IDENTIDAD
   // -----------------------------------------------------------------------
   marca: {
-    nombre: "Vértice Propiedades",
+    nombre: "Inmobiliaria Mayr",
     // Texto corto que aparece en el logo del header (podés dejar el nombre
     // completo o una sigla, ej: "VP")
     logoTexto: "Vértice",
