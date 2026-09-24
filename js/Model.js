@@ -28,7 +28,7 @@ const agencia = {
     nombre: "Inmobiliaria Mayr",
     // Texto corto que aparece en el logo del header (podés dejar el nombre
     // completo o una sigla, ej: "VP")
-    logoTexto: "Vértice",
+    logoTexto: "Inmobiliaria Mayr",
     // Frase corta que acompaña al nombre en el header (opcional, dejar "" si no querés)
     eslogan: "Bienes raíces con criterio",
   },
@@ -105,15 +105,15 @@ const agencia = {
   // -----------------------------------------------------------------------
   ubicacion: {
     titulo: "Ubicación y contacto",
-    direccionTexto: "Av. Principal 1234, Piso 2 · Ciudad, Provincia",
-    horario: "Lunes a viernes de 9 a 18 h · Sábados de 9 a 13 h",
-    telefono: "+54 9 11 0000-0000",
+    direccionTexto: "Av. Alameda de la Bajada, Villa Urquiza, Entre Ríos, Argentina 3113",
+    horario: "Lunes a sábado, de 9 a 13 hs y de 16 a 20 hs.",
+    telefono: "+54 343 438-2016",
     email: "contacto@verticepropiedades.com",
     // Pegá acá el "src" que te da Google Maps en Compartir > Insertar un mapa.
     // Si todavía no lo tenés, dejá esta URL de ejemplo: el mapa se va a ver,
     // pero apuntando a una ubicación genérica.
     mapaEmbedUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.994!2d-58.3816!3d-34.6037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDM2JzEzLjMiUyA1OMKwMjInNTQuMCJX!5e0!3m2!1ses!2sar!4v1600000000000",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.6261533119178!2d-60.37869473036177!3d-31.649384398384687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b45a668e1d1c8d%3A0xbd4a9869762c32b4!2sMAYR%20Servicios%20Inmobiliarios%2C%20bienes%20ra%C3%ADces.%20Ventas%20Lotes%2C%20casas%2C%20campos%2C%20tasaciones...!5e1!3m2!1ses!2sar!4v1790291066660!5m2!1ses!2sar",
   },
 
   // -----------------------------------------------------------------------
@@ -121,16 +121,16 @@ const agencia = {
   // -----------------------------------------------------------------------
   redes: {
     instagram: {
-      url: "https://instagram.com/tu_usuario",
+      url: "https://www.instagram.com/inmobiliariamayr",
       etiqueta: "Instagram",
     },
     facebook: {
-      url: "https://facebook.com/tu_pagina",
+      url: "https://www.facebook.com/cesarhugo.mayr",
       etiqueta: "Facebook",
     },
     whatsapp: {
       // Formato recomendado: https://wa.me/<código de país + número, sin espacios ni +>
-      url: "https://wa.me/5491100000000",
+      url: "https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F543434382016%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio%26fbclid%3DPAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAadmyI_CX9nQqZWPEB-wk0p4mA7qD_BUi9jZL47NEm3q8SYbVR9ue8AhbS1DYQ_aem_sMkH7cFzkTKGncoYRg3UrA&e=AUDhXl2hXWjaFyEDSZprvJwNRgRkKdlZc9UuubnSEErA_8lcJqg_Mg3fZn1dt74LQ4ppUIRDObA5KJDUauM6aJAH57bakcRg93fdvJKWEh3bZZteiH5Oub5udG8QDww",
       etiqueta: "WhatsApp",
     },
   },
