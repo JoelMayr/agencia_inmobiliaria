@@ -108,7 +108,7 @@ const agencia = {
     direccionTexto: "Av. Alameda de la Bajada, Villa Urquiza, Entre Ríos, Argentina 3113",
     horario: "Lunes a sábado, de 9 a 13 hs y de 16 a 20 hs.",
     telefono: "+54 343 438-2016",
-    email: "contacto@verticepropiedades.com",
+    email: "inmobiliariamayrvillaurquiza@gmail.com",
     // Pegá acá el "src" que te da Google Maps en Compartir > Insertar un mapa.
     // Si todavía no lo tenés, dejá esta URL de ejemplo: el mapa se va a ver,
     // pero apuntando a una ubicación genérica.
